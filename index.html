@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <script language="javascript" type="text/javascript" src="assets/javascript/app.js"></script>
+  <title>Trivia Survey Game</title>
+</head>
+
+<body>
+
+  <div class="header">
+
+  <h1>Trivia Quiz: Chemicals and the Universe</h1>
+
+  <div id="results">
+    <h2> Your score: __on completion__ </h2>
+  </div>
+
+  <div class="body">
+
+    <button name="startQuiz" id="startButton" type="button" onclick="return onStart()">START</button>
+    <form name="quiz" onsubmit="return onSubmit()">
+
+    <div id="timerBox">Your time remaining to complete = <span id="timerCount">90</span> Seconds </div>
+
+      <div class ="question">
+        <h1>What is the most abundant chemical element in the Earth's crust by mass?</h1>
+        <label class="radioSelector">
+          <input type="radio" name="q1" value="a">a. Carbon
+        </label>
+        <label class="radioSelector"> 
+          <input type="radio" name="q1" value="b">b. Oxygen
+        </label>
+        <label class="radioSelector">     
+          <input type="radio" name="q1" value="c">c. Iron
+        </label>
+        <label class="radioSelector">
+          <input type="radio" name="q1" value="d">d. Nitrogen
+        </label>
+      </div>
+
+      <div class ="question">
+        <h1>What is the most abundant element in the universe?</h1>
+        <label class="radioSelector">
+          <input type="radio" name="q2" value="a">a. Helium
+        </label>
+        <label class="radioSelector">
+          <input type="radio" name="q2" value="b">b. Carbon
+        </label>
+        <label class="radioSelector">    
+          <input type="radio" name="q2" value="c">c. Lithium
+        </label>
+        <label class="radioSelector">
+          <input type="radio" name="q2" value="d">d. Hydrogen
+        </label>
+      </div>
+
+      <div class ="question">
+        <h1>What is the densest element in the universe?</h1>
+        <label class="radioSelector">
+          <input type="radio" name="q3" value="a">a. Iron
+        </label>
+        <label class="radioSelector">
+          <input type="radio" name="q3" value="b">b. Gold
+        </label>
+        <label class="radioSelector">    
+          <input type="radio" name="q3" value="c">c. Osmium
+        </label>
+        <label class="radioSelector">
+          <input type="radio" name="q3" value="d">d. Lawrencium
+        </label>  
+      </div>
+
+      <div class ="question">
+        <h1>Which scientist first observed a pulsar, a rapidly rotating neutron star?</h1>
+        <label class="radioSelector">
+          <input type="radio" name="q4" value="a">a. Jocelyn Bell Burnell
+        </label>
+        <label class="radioSelector">
+          <input type="radio" name="q4" value="b">b. Albert Einstein
+        </label>
+        <label class="radioSelector">  
+          <input type="radio" name="q4" value="c">c. Erwin Schroedinger
+        </label>
+        <label class="radioSelector">
+          <input type="radio" name="q4" value="d">d. Max Born
+        </label>  
+      </div>
+
+      <div class ="question">
+        <h1>What big astronomical event with neutron stars was first observed with the LIGO Observatory in 2017?</h1>
+        <label class="radioSelector">
+          <input type="radio" name="q5" value="a">a. Evaporation of a neutron star.
+        </label>
+        <label class="radioSelector">
+          <input type="radio" name="q5" value="b">b. The collision of two neutron stars, sending gravitational waves.
+        </label>
+        <label class="radioSelector">
+          <input type="radio" name="q5" value="c">c. A neutron star turning into a hypervelocity star. 
+        </label>
+        <label class="radioSelector">
+          <input type="radio" name="q5" value="d">d. Melting of the neutron star.
+        </label>  
+        <br><br>
+
+      <button type="submit" id="submitButton">Submit Test</button>
+  </div>
+
+
+
